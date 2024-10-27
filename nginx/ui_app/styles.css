@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #2e2e2e;
+    text-align: left;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #4f4f4f;
+}
+
+input[type="text"], input[type="checkbox"], select{
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+select {
+    color: gray;
+}
+
+select:valid {
+    color: black;
+}
+
+input[type="checkbox"] {
+    margin-bottom: 0;
+}
+
+input[type="text"]:focus, select:focus {
+    outline: none;
+    border-color: #7a5bf1;
+}
+
+.privacy-policy {
+    font-size: 0.85rem;
+    color: gray;
+    display: flex;
+    align-items: center;
+}
+
+.privacy-policy input {
+    margin-right: 10px;
+}
+
+.privacy-policy a {
+    color: gray;
+}
+
+.privacy-policy a:hover {
+    text-decoration: underline;
+}
+
+.submit-button {
+    padding: 15px;
+    margin-top: 1rem;
+    font-size: 1rem;
+    background-color: #7a5bf1;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #5e44c9;
+}
+
+.team-list {
+    margin-top: 30px;
+}
+
+#team-members {
+    list-style: none;
+    padding: 0;
+}
+
+.team-members-item {
+    background-color: #f8f8f8;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.team-members-item p {
+    margin: 0;
+}
+
+.delete-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #dc3545;
+    transition: color 0.3s ease;
+}
+
+.delete-button:hover {
+    color: #b52a35;
+}
+
+.gray-text {
+    color:gray;
+}
